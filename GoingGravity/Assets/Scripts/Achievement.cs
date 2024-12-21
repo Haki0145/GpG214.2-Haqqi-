@@ -1,18 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Achievement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float timeLimit = 30f;
+    public GameObject unlockPanel;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField]private Timer timer;
+
+    public Unlockable UnlockManager;
+
+   
+
+
+    public void CheckAchievementConditions()
     {
-        
+
+        Debug.Log(timer.enabled);
+        Debug.Log(UnlockManager.enabled);
+
+        if (timer.ElapsedTime <= timeLimit && !UnlockManager.isUnlocked)
+        {
+            unlockPanel.SetActive(true);
+            UnlockManager.isUnlocked = true;
+            UnlockManager.unlockFile.isUnlocked = true;
+            UnlockManager.Save();
+        }
     }
 }
+
+
+
+

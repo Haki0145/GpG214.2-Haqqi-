@@ -55,10 +55,15 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
-            transform.position = spawnPoint.position;
+            Respawn();
             DeafultGravity();
 
         }
+    }
+
+    public void Respawn()
+    {
+        transform.position = spawnPoint.position;
     }
 
     void OnTriggerEnter2D(Collider2D other)
