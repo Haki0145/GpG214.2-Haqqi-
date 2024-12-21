@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnlockableData : MonoBehaviour
+public class UnlockableData 
 {
-    // Start is called before the first frame update
-    void Start()
+    public string unlockableFolder;
+    public string unlockableID;
+    public bool isUnlocked;
+    public bool hasPreviousleyBeenDisplayed;
+
+
+    public void Unlock()
     {
-        
+        isUnlocked = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateHasBeenDisplayed()
     {
-        
+        hasPreviousleyBeenDisplayed = true;
     }
+
+   
 }
