@@ -1887,6 +1887,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e4fc748a22ee83478c8db0c625fb292, type: 3}
+--- !u!1 &951573613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 951573615}
+  - component: {fileID: 951573614}
+  m_Layer: 0
+  m_Name: Groud spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &951573614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951573613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5b2e21787890048a819e6bfce0ff09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redDotTexture: {fileID: 2800000, guid: f4ec23363e229ae40bf5c70cb77d6d86, type: 3}
+  objectToSpawn: {fileID: 4991054925462592348, guid: 7e4fc748a22ee83478c8db0c625fb292, type: 3}
+  spawnDepth: 0
+  spacing: 1
+  groundPixelSize: 3
+--- !u!4 &951573615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951573613}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30.6, y: 16.137405, z: -0.3249271}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &973130607
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,3 +4299,4 @@ SceneRoots:
   - {fileID: 783733918}
   - {fileID: 49480722}
   - {fileID: 1610486754}
+  - {fileID: 951573615}
